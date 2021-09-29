@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "friday"
+          find: "main_startup"
 
-          replace: "speedo"
+          replace: "main_start"
 
       - name: Create Pull Request
 
