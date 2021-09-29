@@ -9,9 +9,9 @@
 import aiohttp
 from pyrogram import filters
 from xtraplugins.dB.harem_heckdb import add_chat, is_chat_in_db, rm_chat
-from main_startup.config_var import Config
-from main_startup.core.decorators import speedo_on_cmd, listen
-from main_startup.helper_func.basic_helpers import (
+from main_start.config_var import Config
+from main_start.core.decorators import speedo_on_cmd, listen
+from main_start.helper_func.basic_helpers import (
     edit_or_reply,
     edit_or_send_as_file,
     get_text,
@@ -19,7 +19,7 @@ from main_startup.helper_func.basic_helpers import (
     iter_chats,
     run_in_exc
 )
-from main_startup.helper_func.logger_s import LogIt
+from main_start.helper_func.logger_s import LogIt
 from plugins import devs_id
 import io
 import os

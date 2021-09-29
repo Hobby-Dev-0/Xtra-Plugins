@@ -9,9 +9,9 @@
 import asyncio
 import os
 import logging
-from main_startup.config_var import Config
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
+from main_start.config_var import Config
+from main_start.core.decorators import speedo_on_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text
 from pyrogram.errors import FloodWait
 from xtraplugins.dB.fban_db import (
     add_fed,

@@ -6,8 +6,8 @@
 ### Plugins 🔧
 
 ```python3
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply
+from main_start.core.decorators import speedo_on_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply
 
 @speedo_on_cmd(['helloworld'],
     cmd_help={
@@ -20,7 +20,7 @@ async def hello_world(client, message):
 ### Custom Filters 📣
 
 ```python3
-from main_startup.core.decorators import listen
+from main_start.core.decorators import listen
 
 @listen(filters.mentioned & ~filters.me)
 async def mentioned_(client, message):

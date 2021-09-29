@@ -6,13 +6,13 @@
 #
 # All rights reserved.
 
-from main_startup.core.decorators import speedo_on_cmd
+from main_start.core.decorators import speedo_on_cmd
 import logging
-from main_startup import bot, Friday, Config
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
+from main_start import bot, Friday, Config
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text
 from xtraplugins.dB.nightmodedb import is_night_chat_in_db, get_all_night_chats, rm_night_chat, add_night_chat
 from pyrogram.types import ChatPermissions
-from main_startup.helper_func.logger_s import LogIt
+from main_start.helper_func.logger_s import LogIt
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import logging
 

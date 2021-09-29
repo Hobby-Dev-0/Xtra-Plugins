@@ -13,12 +13,12 @@ from fake_useragent import UserAgent
 import requests
 from bs4 import BeautifulSoup
 from lxml import etree
-from main_startup.helper_func.basic_helpers import run_in_exc
+from main_start.helper_func.basic_helpers import run_in_exc
 from xtraplugins.helper_files.dl_helpers import api_request, find_between, base64_url_decode, decrypt_attr, base64_to_a32, parse_url 
 
 class AnyDL:
     def __init__(self):
-        self.dl_path = "./main_startup/downloads"
+        self.dl_path = "./main_start/downloads"
                         
     @run_in_exc
     def gdrive(self, url):

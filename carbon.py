@@ -14,13 +14,13 @@ from selenium.webdriver.chrome.options import Options
 import asyncio
 import logging
 from selenium.common.exceptions import NoSuchElementException
-from main_startup import Config
+from main_start import Config
 import random
 import os
 from urllib.parse import urlencode, quote_plus
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.core.startup_helpers import run_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text, run_in_exc
+from main_start.core.decorators import speedo_on_cmd
+from main_start.core.startup_helpers import run_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text, run_in_exc
 
 
 GOOGLE_CHROME_BIN = Config.CHROME_BIN_PATH

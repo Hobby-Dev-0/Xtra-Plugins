@@ -14,8 +14,8 @@ import time as t
 import zipfile
 from datetime import datetime
 
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, humanbytes
+from main_start.core.decorators import speedo_on_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply, humanbytes
 
 extracted = "./downloads/extracted/"
 

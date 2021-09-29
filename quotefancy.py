@@ -1,7 +1,7 @@
 # (C) Copyright - <New-dev0@Github> & <Anonymous_Machinee@Telegram>
 
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply
+from main_start.core.decorators import speedo_on_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply
 from quotefancy import get_quote
 
 

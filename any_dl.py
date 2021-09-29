@@ -8,7 +8,7 @@
 
 import time
 import aiohttp
-from main_startup.helper_func.basic_helpers import edit_or_reply, humanbytes, time_formatter
+from main_start.helper_func.basic_helpers import edit_or_reply, humanbytes, time_formatter
 from .helper_files.dl_ import AnyDL
 from fsplit.filesplit import Filesplit
 import os
@@ -17,10 +17,10 @@ import pathlib
 import uuid
 from pyrogram.errors import FloodWait, MessageNotModified
 import math
-from main_startup.config_var import Config
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.core.startup_helpers import run_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text, progress
+from main_start.config_var import Config
+from main_start.core.decorators import speedo_on_cmd
+from main_start.core.startup_helpers import run_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text, progress
 
 async def download_file(message, url, file_name, show_progress=True):
     c_ = time.time()
@@ -92,7 +92,7 @@ async def send_file(client, r_msg, file, capt, e_msg):
     c_time = time.time()
     file_name = os.path.basename(file)
     send_as_thumb = False
-    if os.path.exists("./main_startup/Cache/thumb.jpg"):
+    if os.path.exists("./main_start/Cache/thumb.jpg"):
         send_as_thumb = True
     if file.endswith(image_ext):
         await r_msg.reply_video(
@@ -107,7 +107,7 @@ async def send_file(client, r_msg, file, capt, e_msg):
             await r_msg.reply_video(
                 file,
                 quote=True,
-                thumb="./main_startup/Cache/thumb.jpg",
+                thumb="./main_start/Cache/thumb.jpg",
                 caption=capt,
                 progress=progress,
                 progress_args=(e_msg, c_time, f"`Uploading {file_name}!`", file_name),
@@ -125,7 +125,7 @@ async def send_file(client, r_msg, file, capt, e_msg):
             await r_msg.reply_animation(
                 file,
                 quote=True,
-                thumb="./main_startup/Cache/thumb.jpg",
+                thumb="./main_start/Cache/thumb.jpg",
                 caption=capt,
                 progress=progress,
                 progress_args=(e_msg, c_time, f"`Uploading {file_name}!`", file_name),
@@ -143,7 +143,7 @@ async def send_file(client, r_msg, file, capt, e_msg):
             await r_msg.reply_audio(
                 file,
                 quote=True,
-                thumb="./main_startup/Cache/thumb.jpg",
+                thumb="./main_start/Cache/thumb.jpg",
                 caption=capt,
                 progress=progress,
                 progress_args=(e_msg, c_time, f"`Uploading {file_name}!`", file_name),
@@ -168,7 +168,7 @@ async def send_file(client, r_msg, file, capt, e_msg):
             await r_msg.reply_document(
                 file,
                 quote=True,
-                thumb="./main_startup/Cache/thumb.jpg",
+                thumb="./main_start/Cache/thumb.jpg",
                 caption=capt,
                 progress=progress,
                 progress_args=(e_msg, c_time, f"`Uploading {file_name}!`", file_name),

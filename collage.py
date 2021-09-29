@@ -13,10 +13,10 @@ import shutil
 from PIL import Image
 import logging
 import pathlib
-from main_startup.config_var import Config
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.core.startup_helpers import run_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
+from main_start.config_var import Config
+from main_start.core.decorators import speedo_on_cmd
+from main_start.core.startup_helpers import run_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text
 
 
 async def create_s_collage(file_path, filename, width, stark_h):

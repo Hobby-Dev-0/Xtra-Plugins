@@ -6,11 +6,11 @@
 #
 # All rights reserved.
 
-from main_startup.config_var import Config
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.core.startup_helpers import run_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
-from main_startup.helper_func.plugin_helpers import convert_to_image
+from main_start.config_var import Config
+from main_start.core.decorators import speedo_on_cmd
+from main_start.core.startup_helpers import run_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text
+from main_start.helper_func.plugin_helpers import convert_to_image
 import requests
 import os
 from base64 import b64decode

@@ -13,8 +13,8 @@ import time
 from asyncio import sleep
 from pyrogram.types import ChatPermissions
 import os
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.helper_func.basic_helpers import (
+from main_start.core.decorators import speedo_on_cmd
+from main_start.helper_func.basic_helpers import (
     edit_or_reply,
     edit_or_send_as_file,
     get_text,
@@ -22,7 +22,7 @@ from main_startup.helper_func.basic_helpers import (
     is_admin_or_owner,
 )
 import heroku3
-from main_startup.config_var import Config
+from main_start.config_var import Config
 
 heroku_client = None
 if Config.HEROKU_API_KEY:

@@ -6,17 +6,17 @@
 #
 # All rights reserved.
 
-from main_startup.core.decorators import speedo_on_cmd, listen
+from main_start.core.decorators import speedo_on_cmd, listen
 from pyrogram import filters
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
-from main_startup.config_var import Config
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text
+from main_start.config_var import Config
 import logging
 from functools import wraps
 import io
 import os
 from datetime import datetime
 import requests
-from main_startup.helper_func.plugin_helpers import convert_to_image
+from main_start.helper_func.plugin_helpers import convert_to_image
 
 
 key = Config.REM_BG_API_KEY or None

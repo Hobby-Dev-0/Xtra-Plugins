@@ -8,10 +8,10 @@
 
 
 import aiohttp
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text
 from bs4 import BeautifulSoup
 from pyrogram import filters
-from main_startup.core.decorators import speedo_on_cmd
+from main_start.core.decorators import speedo_on_cmd
 
 
 @speedo_on_cmd(

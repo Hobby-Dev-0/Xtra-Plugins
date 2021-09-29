@@ -7,8 +7,8 @@ from bs4 import BeautifulSoup
 from faker import Faker
 from faker.providers import internet
 
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.helper_func.basic_helpers import (
+from main_start.core.decorators import speedo_on_cmd
+from main_start.helper_func.basic_helpers import (
     delete_or_pass,
     edit_or_reply,
     get_text,

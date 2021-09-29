@@ -9,9 +9,9 @@
 import os
 import time
 import requests
-from main_startup.core.decorators import speedo_on_cmd, Config
-from main_startup.core.startup_helpers import run_cmd
-from main_startup.helper_func.basic_helpers import (
+from main_start.core.decorators import speedo_on_cmd, Config
+from main_start.core.startup_helpers import run_cmd
+from main_start.helper_func.basic_helpers import (
     edit_or_reply,
     progress,
     edit_or_send_as_file,

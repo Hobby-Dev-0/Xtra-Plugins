@@ -16,13 +16,13 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
 import asyncio
-from main_startup import Config
+from main_start import Config
 import aiohttp
 from bs4 import BeautifulSoup
 from lxml import etree
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.core.startup_helpers import run_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text, run_in_exc
+from main_start.core.decorators import speedo_on_cmd
+from main_start.core.startup_helpers import run_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text, run_in_exc
 
 GOOGLE_CHROME_BIN = Config.CHROME_BIN_PATH
 CHROME_DRIVER = Config.CHROME_DRIVER_PATH

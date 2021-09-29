@@ -14,7 +14,7 @@ import time
 from math import ceil
 import logging
 import ffmpeg
-from main_startup import Friday
+from main_start import Friday
 import functools
 import threading
 from concurrent.futures import ThreadPoolExecutor
@@ -22,8 +22,8 @@ from pyrogram.errors import FloodWait, MessageNotModified
 import multiprocessing
 import time
 import calendar
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text, humanbytes, time_formatter, run_in_exc
+from main_start.core.decorators import speedo_on_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text, humanbytes, time_formatter, run_in_exc
 from pytgcalls import GroupCallFactory, GroupCallFileAction
 import signal
 import random

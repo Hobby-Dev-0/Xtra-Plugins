@@ -7,8 +7,8 @@
 # All rights reserved.
 
 from anime_downloader.sites import get_anime_class
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
+from main_start.core.decorators import speedo_on_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text
 from mal import Anime, AnimeSearch, Manga, MangaSearch
 
 

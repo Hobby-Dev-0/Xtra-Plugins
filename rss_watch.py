@@ -6,11 +6,11 @@
 #
 # All rights reserved.
 
-from main_startup.core.decorators import speedo_on_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
+from main_start.core.decorators import speedo_on_cmd
+from main_start.helper_func.basic_helpers import edit_or_reply, get_text
 import feedparser
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from main_startup import Friday
+from main_start import Friday
 from xtraplugins.dB.rss_db import (
     add_rss,
     is_get_chat_rss,
