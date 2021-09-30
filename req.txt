@@ -1,6 +1,6 @@
 lxml
 wikipedia
-pytgcalls[pyrogram]
+pytgcalls==3.0.0.dev19 #[pyrogram]
 mal-api
 git+https://github.com/StarkGang/maigret
 git+https://github.com/starkgang/shazamio
